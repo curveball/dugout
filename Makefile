@@ -28,6 +28,7 @@ watch:
 
 .PHONY:start
 start: build
+	node dist/index.js
 
 .PHONY:clean
 clean:

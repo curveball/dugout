@@ -1,12 +1,14 @@
-Curveball New Package
-=====================
+Curveball Dugout
+================
 
-This repository serves as the skeleton for all new [Curveball][1] packages.
+Curveball multi-user server event server.
+
+This package is EXPERIMENTAL. Not ready for production
 
 Installation
 ------------
 
-    npm install @curveball/new-package 
+    npm install @curveball/dugout
 
 
 Getting started
@@ -14,9 +16,5 @@ Getting started
 
 ...
 
-API
----
 
-...
-
-[1]: https://github.com/curveball/
+[1]: https://github.com/curveball/dugout

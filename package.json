@@ -1,7 +1,7 @@
 {
-  "name": "@curveball/new-package",
+  "name": "@curveball/dugout",
   "version": "0.0.1",
-  "description": "Description goes here",
+  "description": "Websocket event server. Build rooms and other multi-user applications",
   "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "make build",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/curveball/new-package.git"
+    "url": "git+https://github.com/curveball/dugout.git"
   },
   "files": [
     "package.json",
@@ -20,12 +20,13 @@
     "LICENSE"
   ],
   "keywords": [
-    "http",
+    "websocket",
+    "events",
+    "event-sourcing",
+    "chat",
     "framework",
     "nodejs",
     "typescript",
-    "push",
-    "http2",
     "curveball"
   ],
   "author": "Evert Pot (https://evertpot.com/)",
@@ -33,15 +34,14 @@
   "bugs": {
     "url": "https://github.com/curveball/dugout/issues"
   },
-  "homepage": "https://github.com/curveball/new-package#readme",
+  "homepage": "https://github.com/curveball/dugout#readme",
   "dependencies": {
+    "@curveball/core": "^0.12.0",
     "@curveball/accesslog": "^0.2.0",
     "@curveball/bodyparser": "^0.4.6",
-    "@curveball/core": "^0.12.0",
     "@curveball/problem": "^0.2.1"
   },
   "devDependencies": {
-    "@curveball/core": "^0.11.2",
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
     "@types/node": "^10.17.17",

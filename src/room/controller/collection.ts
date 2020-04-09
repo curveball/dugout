@@ -6,7 +6,7 @@ import * as service from '../service';
 class RoomCollectionController extends Controller {
 
   get(ctx: Context) {
-    
+
     const rooms = service.findAll();
     ctx.response.body = collection(rooms);
 

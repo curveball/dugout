@@ -15,7 +15,7 @@ export function findAll(): Room[] {
 }
 
 export function findByPath(path: string): Room {
-  
+
   let room:Room | undefined = rooms.get(path);
   if (!room) {
     // Automatically create new room

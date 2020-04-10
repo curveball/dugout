@@ -1,6 +1,6 @@
 {
   "name": "@curveball/dugout",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Websocket event server. Build rooms and other multi-user applications",
   "main": "dist/index.js",
   "scripts": {

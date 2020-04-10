@@ -20,12 +20,13 @@ export function collection(rooms: Room[]): HalResource {
 
 }
 
-export function item(room: Room): HalResource {
+export function item(room: Room, websocketUrl: string): HalResource {
 
   return {
     _links: {
       self: { href: `/room/${room.path}`, title: `Room: ${room.path}`},
       collection: { href: '/room', title: 'Room collection'},
+      socket: { href: websocketUrl, title: 'Websocket' },
     },
     ...room,
   }

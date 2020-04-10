@@ -42,7 +42,9 @@
     "@curveball/core": "^0.12.0",
     "@curveball/problem": "^0.2.1",
     "@curveball/router": "^0.2.4",
-    "hal-browser": "^0.8.6"
+    "@types/ws": "^7.2.3",
+    "hal-browser": "^0.8.6",
+    "ws": "^7.2.3"
   },
   "devDependencies": {
     "@types/chai": "^4.2.11",

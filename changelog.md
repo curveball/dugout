@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.0.1 (2019-??-??)
+0.0.2 (2020-04-10)
 ------------------
 
-* First version
+* First version. Basic websockets and rooms support.

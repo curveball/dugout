@@ -66,9 +66,6 @@
       ".ts"
     ]
   },
-  "peerDependencies": {
-    "@curveball/core": ">=0.11 <1"
-  },
   "mocha": {
     "require": "ts-node/register",
     "recursive": true,
@@ -77,5 +74,8 @@
       "js",
       "tsx"
     ]
+  },
+  "bin": {
+    "dugout": "node/index.js"
   }
 }

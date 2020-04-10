@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.0.5 (2020-04-10)
+-----------------
+
+* Third attempt at automatically running via npx.
+
 0.0.4 (2020-04-10)
 -----------------
 

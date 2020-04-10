@@ -76,6 +76,6 @@
     ]
   },
   "bin": {
-    "dugout": "dist/index.js"
+    "dugout": "./dist/index.js"
   }
 }

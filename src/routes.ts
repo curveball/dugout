@@ -1,12 +1,14 @@
 import router from '@curveball/router';
-import homeController from './home/controller';
-import roomCollectionController from './room/controller/collection';
-import roomController from './room/controller/item';
-import roomSocketController from './room/controller/socket';
+import home from './home/controller';
+import roomCollection from './room/controller/collection';
+import room from './room/controller/item';
+import roomSocket from './room/controller/socket';
+import roomHistory from './room/controller/history';
 
 export default [
-  router('/', homeController),
-  router('/room', roomCollectionController),
-  router('/room/:roomId', roomController),
-  router('/room/:roomId/socket', roomSocketController),
+  router('/', home),
+  router('/room', roomCollection),
+  router('/room/:roomId', room),
+  router('/room/:roomId/socket', roomSocket),
+  router('/room/:roomId/history', roomHistory),
 ];

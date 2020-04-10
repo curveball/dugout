@@ -8,9 +8,17 @@ class RoomSocketController extends WebSocketController {
 
   webSocket(ctx: Context) {
 
+    const room = service.findByPath(ctx.state.params.roomId);
+
     ctx.webSocket.on('message', (msg) => {
 
-      ctx.webSocket.send('ack');
+      service.addEvent(room, msg);
+
+    });
+
+    service.addListener(room, (event: any) => {
+
+      ctx.webSocket.send(event);
 
     });
 

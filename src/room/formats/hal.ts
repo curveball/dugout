@@ -41,7 +41,7 @@ export function history(room: Room): HalResource {
       self: { href: `/room/${room.path}/history`, title: `History for Room: ${room.path}`},
       up: { href: `/room/${room.path}`, title: `Room: ${room.path}`},
     },
-    events: room.events,
+    actions: room.actions,
     lastEventId: room.lastEventId,
   }
 

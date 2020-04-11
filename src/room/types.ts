@@ -1,9 +1,11 @@
+import { StoredAction } from '../action';
+
 export interface RoomInfo {
   path: string;
   lastEventId: number;
 }
 
 export interface Room extends RoomInfo {
-  events: any[],
-  listeners: ((event: any) => void)[]
+  actions: StoredAction[],
+  listeners: ((action: StoredAction) => void)[]
 }

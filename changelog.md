@@ -1,6 +1,14 @@
 Changelog
 =========
 
+0.0.6 (2020-04-11)
+------------------
+
+* Redux-style actions with a "type", "payload" and "meta".
+* Every action gets broadcasted to every user.
+* Errors are emitted as `dugout/error` type actions.
+
+
 0.0.5 (2020-04-10)
 -----------------
 
